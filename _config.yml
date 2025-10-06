@@ -16,37 +16,18 @@
 title: Welcome to GUDEV!
 email: gudevsoc@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  GUDEV is Glasgow University's Game Development Society. 
+  GUDEV is Glasgow University's Game Development Society.
   We host events like socials, workshops, and weekend-long gamejams to test your dev skills!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://gudevsoc.com" # the base hostname & protocol for your site, e.g. http://example.com
 gamecdnurl: http://xiv.moe # CDN that provides games
-staticurl: "/static"
-collections:
-  events:
-    output: false
-    permalink: /events/:path/
-  
-  games:
-    output: true
-    permalink: /games/:path/
-
-#  gamedev:
-#    output: true
-#    permalink: /gamedev/:path/
-
-defaults:
-  - scope:
-      path: ""
-      type: "events"
-    values:
-      layout: "post"
+staticurl: "static"
 
 twitter_username: none
-github_username:  none
+github_username: none
 # Build settings
-markdown: kramdown
-theme: minima
+# markdown: kramdown
+# theme: minima
 gems:
   - jekyll-feed
   - jekyll-redirect-from

@@ -3,31 +3,20 @@ layout: base
 permalink: /events/
 ---
 
-{% capture cutoff %}{{'now' | date: '%s' | plus: 86400}}{% endcapture %}
-{% assign upcoming=false %}
+{% capture cutoff %}{{'now' | date: '%s' | plus: 86400}}{% endcapture %} {%
+assign upcoming=false %}
 <h1>Upcoming Events</h1>
 <div class="container">
-    {% for event in site.events %}
-        {% capture eventtime %}{{ event.date | date: '%s'}}{% endcapture %}
-        {% if eventtime > cutoff %}
-            {% assign upcoming=true %}
-            {{ event.output }}
-        {% endif %}
-    {% endfor %}
-    
-    {% if upcoming==false %}
-        No events planned for now.
-    {% endif %}
+    {% for event in site.events %} {% capture eventtime %}{{ event.date | date:
+    '%s'}}{% endcapture %} {% if eventtime > cutoff %} {% assign upcoming=true
+    %} {{ event.output }} {% endif %} {% endfor %} {% if upcoming==false %} No
+    events planned for now. {% endif %}
 </div>
-
 
 {% assign reversed_events = site.events | reverse %}
 <h1>Past Events</h1>
 <div class="container">
-    {% for event in reversed_events %}
-        {% capture eventtime %}{{ event.date | date: '%s'}}{% endcapture %}
-        {% if eventtime < cutoff %}
-            {{ event.output }}
-        {% endif %}
-    {% endfor %}
+    {% for event in reversed_events %} {% capture eventtime %}{{ event.date |
+    date: '%s'}}{% endcapture %} {% if eventtime < cutoff %} {{ event.output }}
+    {% endif %} {% endfor %}
 </div>

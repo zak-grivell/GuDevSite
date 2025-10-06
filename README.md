@@ -1,6 +1,6 @@
 # GUDEV Website
 
-Welcome! First of all thank you for helping make GUDEV a better place by working on this website. 
+Welcome! First of all thank you for helping make GUDEV a better place by working on this website.
 
 Anyways, I've tried to keep everything as minimalist and clean as possible ( at least what I've seen and written ;) ) and I'd ask you to do the same. This website is built upon [jekyll](https://jekyllrb.com/) which is a static site generator - meaning that there is no logic done like with amazon purchases but instead we have jekyll take our data and html templates and pages to build a set of complete html pages that make a website. Whenever a user visits our site they get exactly the *build* html (you can see this in the `_site` folder btw). We host this project on github pages which actually does some of the work of building and storing the html pages for us. Finally we have a domain https://gudevsoc.co.uk which we point github pages to and this allows us to have a nice url for people to visit.
 
@@ -20,7 +20,7 @@ All other folders:
 - **pages** :: contains all pages as html that will make up the site (one html page for each of its respective urls)
 - **static** :: contains all static content like css/js/images/fonts etc.
 
-## building locally on debian/ubuntu  
+## building locally on debian/ubuntu
 
 ```
 sudo apt install ruby ruby-dev gem
@@ -29,6 +29,14 @@ git clone https://github.com/GUDevSoc/Site.git
 cd Site
 bundle install
 bundle exec jekyll serve
+```
+
+or if you are cool and have nix installed (https://nixos.org/download/)
+
+```
+git clone https://github.com/GUDevSoc/Site.git
+cd Site
+nix run
 ```
 
 Then open a browser and goto: localhost:4000

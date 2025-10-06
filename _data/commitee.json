@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Zak",
+    "role": "President",
+    "img": "zak.webp",
+    "favourite_game": "Outerwilds"
+  },
+  {
+    "name": "Saif",
+    "role": "VP",
+    "img": "saif.jpg",
+    "favourite_game": "Roblox"
+  },
+  {
+    "name": "Mackenzie",
+    "role": "Treasurer",
+    "img": "mackenzie.jpeg",
+    "favourite_game": "Crime Scene Cleaner"
+  },
+  {
+    "name": "Leia",
+    "role": "Secretary",
+    "img": "leia.jpg",
+    "favourite_game": "Phasmophobia"
+  },
+  {
+    "name": "Oliver",
+    "role": "Welfare",
+    "img": "oliver.jpeg",
+    "favourite_game": "Minecraft"
+  }
+]
