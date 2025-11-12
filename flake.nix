@@ -39,7 +39,29 @@
               export GEM_HOME=$PWD/.gems
               export PATH="$GEM_HOME/bin:$PATH"
               echo "💎 Jekyll shell ready for ${system}"
+              bundle install
             '';
+          };
+        }
+      );
+
+      apps = forAllSystems (
+        system:
+        let
+          pkgs = import nixpkgs { inherit system; };
+        in
+        {
+          # This defines what `nix run` will execute
+          default = {
+            type = "app";
+            program = toString (
+              pkgs.writeShellScript "run-jekyll" ''
+                export GEM_HOME=$PWD/.gems
+                export PATH="$GEM_HOME/bin:$PATH"
+                echo "🚀 Starting Jekyll development server..."
+                ${pkgs.jekyll}/bin/jekyll serve --livereload
+              ''
+            );
           };
         }
       );

@@ -1,204 +1,99 @@
-<nav
-    class="navbar sticky-bottom bg-body-tertiary"
-    id="navbar"
-    style="overflow-x: scroll"
->
-    <ul
-        class="list-group list-group-horizontal list-group-flush p-0 m-0 gap-3"
-        id="nav-list"
-    >
-        <a
-            href="#our-society"
-            class="list-group-item list-group-item-action nav-link p-0"
-        >
-            <div class="card text-bg-dark my-nav-card">
-                <img
-                    src="{{site.staticurl}}/images/navbar/logo.png"
-                    class="card-img"
-                    alt="About GUDEV"
-                />
-                <div class="card-img-overlay gradient-overlay">
-                    <h5 class="card-title align-self-end mb-0">About GUDEV</h5>
-                </div>
-            </div>
-        </a>
+<nav class="grid" id="navbar">
+    <a href="#our-society" data-section="our-society">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path
+                d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM288 224C288 206.3 302.3 192 320 192C337.7 192 352 206.3 352 224C352 241.7 337.7 256 320 256C302.3 256 288 241.7 288 224zM280 288L328 288C341.3 288 352 298.7 352 312L352 400L360 400C373.3 400 384 410.7 384 424C384 437.3 373.3 448 360 448L280 448C266.7 448 256 437.3 256 424C256 410.7 266.7 400 280 400L304 400L304 336L280 336C266.7 336 256 325.3 256 312C256 298.7 266.7 288 280 288z"
+            />
+        </svg>
+    </a>
+    <span class="dot"></span>
 
-        <a
-            href="#gamejam"
-            class="list-group-item list-group-item-action nav-link p-0"
-        >
-            <div class="card text-bg-dark my-nav-card">
-                <img
-                    src="{{site.staticurl}}/images/navbar/logo.png"
-                    class="card-img"
-                    alt="Gamejams"
-                />
-                <div class="card-img-overlay gradient-overlay">
-                    <h5 class="card-title align-self-end mb-0">Gamejams</h5>
-                </div>
-            </div>
-        </a>
-        <a
-            href="#join"
-            class="list-group-item list-group-item-action nav-link p-0"
-        >
-            <div class="card text-bg-dark my-nav-card">
-                <img
-                    src="{{site.staticurl}}/images/navbar/logo.png"
-                    class="card-img"
-                    alt="Participate"
-                />
-                <div class="card-img-overlay gradient-overlay">
-                    <h5 class="card-title align-self-end mb-0">Participate</h5>
-                </div>
-            </div>
-        </a>
-        <a
-            href="#resources"
-            class="list-group-item list-group-item-action nav-link p-0"
-        >
-            <div class="card text-bg-dark my-nav-card">
-                <img
-                    src="{{site.staticurl}}/images/navbar/logo.png"
-                    class="card-img"
-                    alt="Resources"
-                />
-                <div class="card-img-overlay gradient-overlay">
-                    <h5 class="card-title align-self-end mb-0">Resources</h5>
-                </div>
-            </div>
-        </a>
-        <a
-            href="#comittee"
-            class="list-group-item list-group-item-action nav-link p-0"
-        >
-            <div class="card text-bg-dark my-nav-card">
-                <img
-                    src="{{site.staticurl}}/images/navbar/logo.png"
-                    class="card-img"
-                    alt="Comittee"
-                />
-                <div class="card-img-overlay gradient-overlay">
-                    <h5 class="card-title align-self-end mb-0">Comittee</h5>
-                </div>
-            </div>
-        </a>
-        <a
-            href="#discord"
-            class="list-group-item list-group-item-action nav-link p-0"
-        >
-            <div class="card text-bg-dark my-nav-card">
-                <img
-                    src="{{site.staticurl}}/images/navbar/discord-logo.png"
-                    class="card-img"
-                    alt="Discord"
-                />
-                <div class="card-img-overlay gradient-overlay">
-                    <h5 class="card-title align-self-end mb-0">Discord</h5>
-                </div>
-            </div>
-        </a>
-        <a
-            href="#itch"
-            class="list-group-item list-group-item-action nav-link p-0"
-        >
-            <div class="card text-bg-dark my-nav-card">
-                <img
-                    src="{{site.staticurl}}/images/navbar/itch-logo.png"
-                    class="card-img"
-                    alt="Itch"
-                />
-                <div class="card-img-overlay gradient-overlay">
-                    <h5 class="card-title align-self-end mb-0">Itch</h5>
-                </div>
-            </div>
-        </a>
-        <a
-            href="#instagram"
-            class="list-group-item list-group-item-action nav-link p-0"
-        >
-            <div class="card text-bg-dark my-nav-card">
-                <img
-                    src="{{site.staticurl}}/images/navbar/instagram-logo.png"
-                    class="card-img"
-                    alt="Instagram"
-                />
-                <div class="card-img-overlay gradient-overlay">
-                    <h5 class="card-title align-self-end mb-0">Instagram</h5>
-                </div>
-            </div>
-        </a>
-        <a
-            href="#src"
-            class="list-group-item list-group-item-action nav-link p-0"
-        >
-            <div class="card text-bg-dark my-nav-card">
-                <img
-                    src="{{site.staticurl}}/images/navbar/src-logo.png"
-                    class="card-img"
-                    alt="Src"
-                />
-                <div class="card-img-overlay gradient-overlay">
-                    <h5 class="card-title align-self-end mb-0">Src</h5>
-                </div>
-            </div>
-        </a>
-        <div style="padding-left: 1000px"></div>
-    </ul>
+    <a href="#gamejam" data-section="gamejam">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path
+                d="M448 128C554 128 640 214 640 320C640 426 554 512 448 512L192 512C86 512 0 426 0 320C0 214 86 128 192 128L448 128zM192 240C178.7 240 168 250.7 168 264L168 296L136 296C122.7 296 112 306.7 112 320C112 333.3 122.7 344 136 344L168 344L168 376C168 389.3 178.7 400 192 400C205.3 400 216 389.3 216 376L216 344L248 344C261.3 344 272 333.3 272 320C272 306.7 261.3 296 248 296L216 296L216 264C216 250.7 205.3 240 192 240zM432 336C414.3 336 400 350.3 400 368C400 385.7 414.3 400 432 400C449.7 400 464 385.7 464 368C464 350.3 449.7 336 432 336zM496 240C478.3 240 464 254.3 464 272C464 289.7 478.3 304 496 304C513.7 304 528 289.7 528 272C528 254.3 513.7 240 496 240z"
+            />
+        </svg>
+    </a>
+    <span class="dot"></span>
+    <a href="#join" data-section="join">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path
+                d="M352 128C352 110.3 337.7 96 320 96C302.3 96 288 110.3 288 128L288 288L128 288C110.3 288 96 302.3 96 320C96 337.7 110.3 352 128 352L288 352L288 512C288 529.7 302.3 544 320 544C337.7 544 352 529.7 352 512L352 352L512 352C529.7 352 544 337.7 544 320C544 302.3 529.7 288 512 288L352 288L352 128z"
+            />
+        </svg>
+    </a>
+    <span class="dot"></span>
+    <a href="#socials" data-section="socials">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path
+                d="M415.9 344L225 344C227.9 408.5 242.2 467.9 262.5 511.4C273.9 535.9 286.2 553.2 297.6 563.8C308.8 574.3 316.5 576 320.5 576C324.5 576 332.2 574.3 343.4 563.8C354.8 553.2 367.1 535.8 378.5 511.4C398.8 467.9 413.1 408.5 416 344zM224.9 296L415.8 296C413 231.5 398.7 172.1 378.4 128.6C367 104.2 354.7 86.8 343.3 76.2C332.1 65.7 324.4 64 320.4 64C316.4 64 308.7 65.7 297.5 76.2C286.1 86.8 273.8 104.2 262.4 128.6C242.1 172.1 227.8 231.5 224.9 296zM176.9 296C180.4 210.4 202.5 130.9 234.8 78.7C142.7 111.3 74.9 195.2 65.5 296L176.9 296zM65.5 344C74.9 444.8 142.7 528.7 234.8 561.3C202.5 509.1 180.4 429.6 176.9 344L65.5 344zM463.9 344C460.4 429.6 438.3 509.1 406 561.3C498.1 528.6 565.9 444.8 575.3 344L463.9 344zM575.3 296C565.9 195.2 498.1 111.3 406 78.7C438.3 130.9 460.4 210.4 463.9 296L575.3 296z"
+            />
+        </svg>
+    </a>
+    <span class="dot"></span>
+
+    <a href="#resources" data-section="resources">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path
+                d="M480 576L192 576C139 576 96 533 96 480L96 160C96 107 139 64 192 64L496 64C522.5 64 544 85.5 544 112L544 400C544 420.9 530.6 438.7 512 445.3L512 512C529.7 512 544 526.3 544 544C544 561.7 529.7 576 512 576L480 576zM192 448C174.3 448 160 462.3 160 480C160 497.7 174.3 512 192 512L448 512L448 448L192 448zM224 216C224 229.3 234.7 240 248 240L424 240C437.3 240 448 229.3 448 216C448 202.7 437.3 192 424 192L248 192C234.7 192 224 202.7 224 216zM248 288C234.7 288 224 298.7 224 312C224 325.3 234.7 336 248 336L424 336C437.3 336 448 325.3 448 312C448 298.7 437.3 288 424 288L248 288z"
+            />
+        </svg>
+    </a>
+    <span class="dot"></span>
+    <a href="#committee" data-section="committee">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path
+                d="M320 64C355.3 64 384 92.7 384 128C384 163.3 355.3 192 320 192C284.7 192 256 163.3 256 128C256 92.7 284.7 64 320 64zM416 376C416 401 403.3 423 384 435.9L384 528C384 554.5 362.5 576 336 576L304 576C277.5 576 256 554.5 256 528L256 435.9C236.7 423 224 401 224 376L224 336C224 283 267 240 320 240C373 240 416 283 416 336L416 376zM160 96C190.9 96 216 121.1 216 152C216 182.9 190.9 208 160 208C129.1 208 104 182.9 104 152C104 121.1 129.1 96 160 96zM176 336L176 368C176 400.5 188.1 430.1 208 452.7L208 528C208 529.2 208 530.5 208.1 531.7C199.6 539.3 188.4 544 176 544L144 544C117.5 544 96 522.5 96 496L96 439.4C76.9 428.4 64 407.7 64 384L64 352C64 299 107 256 160 256C172.7 256 184.8 258.5 195.9 262.9C183.3 284.3 176 309.3 176 336zM432 528L432 452.7C451.9 430.2 464 400.5 464 368L464 336C464 309.3 456.7 284.4 444.1 262.9C455.2 258.4 467.3 256 480 256C533 256 576 299 576 352L576 384C576 407.7 563.1 428.4 544 439.4L544 496C544 522.5 522.5 544 496 544L464 544C451.7 544 440.4 539.4 431.9 531.7C431.9 530.5 432 529.2 432 528zM480 96C510.9 96 536 121.1 536 152C536 182.9 510.9 208 480 208C449.1 208 424 182.9 424 152C424 121.1 449.1 96 480 96z"
+            />
+        </svg>
+    </a>
 </nav>
 
 <style>
-    .card {
-        width: 12rem;
-        height: 12rem;
+    nav {
+        display: grid;
+        flex-direction: column;
+        row-gap: 10px;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .dot {
+        height: 5px;
+        width: 5px;
+        background-color: white;
+        border-radius: 50%;
+        margin: auto;
+        /*display: none;*/
+    }
+
+    nav > a {
+        width: 20px;
+        height: 20px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        fill: white;
         transition:
-            width 1s,
-            height 1s;
+            scale 300ms ease,
+            fill 300ms ease;
     }
 
-    .nav-link.active .card-img-overlay,
-    .nav-link:hover .card-img-overlay {
-        opacity: 1;
-    }
-
-    .card > .card-img-overlay {
-        opacity: 0;
+    nav > a > svg {
         display: flex;
-        transition: opacity 0.5s;
+        justify-content: center;
+        align-items: center;
     }
 
-    .gradient-overlay {
-        transition: background 0.5s ease-in-out; /* 👈 Smooth transition */
-    }
-
-    .active .gradient-overlay,
-    .gradient-overlay:hover {
-        background: linear-gradient(
-            to top,
-            rgba(50, 50, 50, 0.9),
-            rgba(50, 50, 50, 0.7) 20%,
-            rgba(50, 50, 50, 0.4) 40%,
-            rgba(50, 50, 50, 0)
-        );
-        /* You can adjust opacity (0.7) or height below */
+    nav > a.active {
+        scale: 1.8;
+        fill: rgb(94, 23, 235);
     }
 </style>
-
-<script>
-    const firstScrollSpyEl = document.querySelector('[data-bs-spy="scroll"]');
-    firstScrollSpyEl.addEventListener("activate.bs.scrollspy", () => {
-        let list = document.getElementById("nav-list");
-        let selected = list.getElementsByClassName("active");
-        let toscroll = document.getElementById("navbar");
-
-        if (selected) {
-            let s = selected[0];
-
-            toscroll.scrollBy({
-                top: 0,
-                left: s.getBoundingClientRect().left - 20,
-                behavior: "smooth",
-            });
-        }
-    });
-</script>

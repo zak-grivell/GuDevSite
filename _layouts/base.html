@@ -1,20 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
     <head>
         {% include sitemetadata.html %} {% include sitestyles.html %}
     </head>
 
-    <body
-        data-bs-spy="scroll"
-        data-bs-target="#navbar-example2"
-        data-bs-root-margin="0px 0px -40%"
-        data-bs-smooth-scroll="true"
-        class="scrollspy-example p-3 rounded-2 bg-dark"
-        tabindex="0"
-        data-bs-theme="dark"
-    >
-        <div class="content">{{ content }}</div>
-
-        {% include sitescripts.html %} {% include navbar.html %}
+    <body class="scrollspy-example" tabindex="0">
+        {% include navbar.html %} {{ content }} {% include sitescripts.html %}
     </body>
 </html>

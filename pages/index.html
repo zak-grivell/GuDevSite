@@ -3,29 +3,24 @@ layout: base
 permalink: /
 ---
 
-<main>
-    <section id="our-society">{% include about-gudev.html %}</section>
+<main
+    class="p-3"
+    data-bs-spy="scroll"
+    data-bs-target="#navbar-example2"
+    data-bs-root-margin="0px 0px -40%"
+    data-bs-smooth-scroll="true"
+>
+    <section id="our-society">{% include sections/about-gudev.html %}</section>
 
-    <section id="gamejam">{% include gamejam.html %}</section>
+    <section id="gamejam">{% include sections/gamejam.html %}</section>
 
-    <section id="join">{% include join.html %}</section>
+    <section id="join">{% include sections/join.html %}</section>
 
-    <section id="resources">{% include resources.html %}</section>
+    <section id="socials">{% include sections/socials.html %}</section>
 
-    <section id="comittee">{% include comittee.html %}</section>
+    <section id="resources">{% include sections/resources.html %}</section>
 
-    <section id="discord">{% include discord.html %}</section>
-
-    <section id="itch">{% include itch.html %}</section>
-
-    <section id="instagram">{% include instagram.html %}</section>
-
-    <section id="src">{% include src.html %}</section>
+    <section id="committee">{% include sections/comittee.html %}</section>
 </main>
 
-<style>
-    section {
-        min-height: 90vh;
-        padding-bottom: 10vh;
-    }
-</style>
+<style></style>
