@@ -14,15 +14,18 @@ body {
     background-color: #363d4a;
     display: grid;
     grid-template-columns: 50px 1fr;
-    padding-left: 0.5rem;
     overflow-y: hidden;
     height: 100vh;
+    grid-gap: 0.5rem;
+    padding-left: 0.5rem;
     /*font-size: 18px;*/
 }
 
 main {
     overflow-y: scroll;
-    width: 100%;
+    padding-right: 0.5rem;
+
+    overflow-x: hidden;
     position: relative;
     scroll-snap-type: y mandatory; /* vertical snap */
     overflow-y: scroll;
